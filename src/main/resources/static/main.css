@@ -28,16 +28,16 @@ body {
     background-size: cover;
 }
 
-body:before {
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("18.jpg");
-    content: "";
-    z-index: 0;
-}
+/*body:before {*/
+/*    height: 50%;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: url("196.jpg");*/
+/*    content: "";*/
+/*    z-index: 0;*/
+/*}*/
 
 .clearfix:after {
     display: block;

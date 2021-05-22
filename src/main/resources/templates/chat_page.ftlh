@@ -6,7 +6,7 @@
     <title>Spring Boot WebSocket Chat Application | CalliCoder</title>
     <link rel="stylesheet" href="../static/main.css" />
 </head>
-<body background="../static/18.jpg"
+<body background="../static/196.jpg"
       style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
 <noscript>
     <h2>Sorry! Your browser doesn't support Javascript</h2>
@@ -18,7 +18,7 @@
         <form id="usernameForm" name="usernameForm">
             <div class="form-group">
                 <input type="text" id="name" placeholder="Username"
-                       autocomplete="off" class="form-control" value="${loggedUser}" />
+                       autocomplete="off" class="form-control" value="${user.username}" />
             </div>
             <div class="form-group">
                 <button type="submit" class="accent username-submit">Start

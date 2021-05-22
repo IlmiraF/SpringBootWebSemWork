@@ -15,7 +15,7 @@
                 </div>
                 <#if isRegisterForm><div class="form-group" style="margin-bottom: 30px">
                     <label for="exampleInputEmail1" style="margin-left: 150px; color: #FFFFFF; font-weight: bold">Email</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div></#if>
                 <#if !isRegisterForm>
