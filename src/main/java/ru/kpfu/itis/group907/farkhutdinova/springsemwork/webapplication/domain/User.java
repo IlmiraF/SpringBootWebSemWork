@@ -4,7 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Email;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 @Builder
@@ -22,6 +26,8 @@ public class User {
 
     private String hashPassword;
 
+    @NotNull
+    @Email
     private String email;
 
     @Column(name = "verification_code", length = 64)
@@ -29,6 +35,9 @@ public class User {
 
     @Column(name = "enable")
     private boolean enabled;
+
+    @OneToMany(mappedBy = "author")
+    private List<Notification> notifications;
 
     @Enumerated(value = EnumType.STRING)
     private State state;

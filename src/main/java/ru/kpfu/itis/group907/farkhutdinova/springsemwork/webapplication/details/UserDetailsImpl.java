@@ -22,6 +22,10 @@ public class UserDetailsImpl implements UserDetails {
         return Collections.singleton(authority);
     }
 
+    public User getUser() {
+        return user;
+    }
+
     public String getEmail() {
         return user.getEmail();
     }
@@ -54,5 +58,9 @@ public class UserDetailsImpl implements UserDetails {
     @Override
     public boolean isEnabled() {
         return user.isEnabled();
+    }
+
+    public boolean isAdmin() {
+        return user.isAdmin();
     }
 }
