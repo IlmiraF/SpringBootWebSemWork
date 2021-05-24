@@ -39,6 +39,15 @@ public class User {
     @OneToMany(mappedBy = "author")
     private List<Notification> notifications;
 
+    @OneToMany(mappedBy = "writer")
+    private List<Article> articles;
+
+    @ManyToMany(mappedBy = "writers")
+    private List<Petition> petitions;
+
+    @OneToMany(mappedBy = "creator")
+    private List<Comment> comments;
+
     @Enumerated(value = EnumType.STRING)
     private State state;
 
