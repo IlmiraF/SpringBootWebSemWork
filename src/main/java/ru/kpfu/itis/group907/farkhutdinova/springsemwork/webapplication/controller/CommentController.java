@@ -12,7 +12,7 @@ import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.A
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.CommentForm;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.ArticleRepo;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.CommentRepo;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.CommentService;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.CommentService;
 
 import java.util.Optional;
 

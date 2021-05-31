@@ -11,18 +11,13 @@
                 <a class="nav-link" href="/notification">Notify <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="/article">Articles</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="/petition">Petitions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/chatek">Chat Room</a>
             </li>
             <#if !Session.SPRING_SECURITY_CONTEXT??>
             <li class="nav-item">

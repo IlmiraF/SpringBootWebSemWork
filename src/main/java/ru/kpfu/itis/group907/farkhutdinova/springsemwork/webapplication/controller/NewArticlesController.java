@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.details.UserDetailsImpl;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.ArticleForm;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.ArticleRepo;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.NewArticleService;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.NewArticleService;
 
 @Controller
 public class NewArticlesController {

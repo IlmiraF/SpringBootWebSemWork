@@ -1,4 +1,4 @@
-package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service;
+package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.impl;
 
 import net.bytebuddy.utility.RandomString;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.User;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.UserForm;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.UserRepo;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.SignUpService;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;

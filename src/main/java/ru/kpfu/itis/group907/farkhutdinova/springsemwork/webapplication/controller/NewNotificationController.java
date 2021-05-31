@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.details.UserDetailsImpl;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.NotificationForm;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.NewNotificationService;
-
-import javax.persistence.Access;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.NewNotificationService;
 
 @Controller
 public class NewNotificationController {

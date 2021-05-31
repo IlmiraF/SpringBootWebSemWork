@@ -1,4 +1,4 @@
-package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service;
+package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -7,6 +7,7 @@ import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.C
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.User;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.CommentForm;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.CommentRepo;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.CommentService;
 
 @Component
 public class CommentServiceImpl implements CommentService {

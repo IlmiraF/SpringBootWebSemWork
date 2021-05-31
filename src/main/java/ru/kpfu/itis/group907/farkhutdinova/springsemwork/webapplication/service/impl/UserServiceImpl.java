@@ -1,18 +1,13 @@
-package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service;
+package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.Role;
-import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.User;
+
 import static ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.UserDto.*;
 
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto.UserDto;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.repos.UserRepo;
-
-import java.util.Collections;
+import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

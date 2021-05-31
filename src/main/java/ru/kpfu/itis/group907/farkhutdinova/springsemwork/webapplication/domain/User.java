@@ -5,9 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import java.util.LinkedList;
 import java.util.List;
 
 @Data
@@ -22,12 +23,15 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Username cannot be empty")
+    @Column(unique = true)
     private String username;
 
+    @NotBlank(message = "Password cannot be empty")
     private String hashPassword;
 
-    @NotNull
-    @Email
+    @Email(message = "Email is not correct")
+    @NotBlank(message = "Email cannot be empty")
     private String email;
 
     @Column(name = "verification_code", length = 64)

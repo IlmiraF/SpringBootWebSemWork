@@ -21,6 +21,7 @@
         <div class="form-group" style="margin-bottom: 30px">
             <label for="exampleInputPassword1" style="margin-left: 150px; color: #FFFFFF; font-weight: bold">Password</label>
             <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
         </div>
         <div class="form-group" style="margin-bottom: 30px">
             <label for="exampleInputEmail1" style="margin-left: 150px; color: #FFFFFF; font-weight: bold">Email</label>
@@ -31,11 +32,11 @@
         <button type="submit" class="btn btn-primary" style="margin-left: 150px">Submit</button>
     </form>
 </div>
-    <#if Session?? && Session.SPRING_SECURITY_LAST_EXCEPTION??>
-        <div>
-            ${Session.SPRING_SECURITY_LAST_EXCEPTION.message}
-        </div>
-    </#if>
+<#--    <#if Session?? && Session.SPRING_SECURITY_LAST_EXCEPTION??>-->
+<#--        <div>-->
+<#--            ${Session.SPRING_SECURITY_LAST_EXCEPTION.message}-->
+<#--        </div>-->
+<#--    </#if>-->
 </@c.page>
 </body>
 </html>

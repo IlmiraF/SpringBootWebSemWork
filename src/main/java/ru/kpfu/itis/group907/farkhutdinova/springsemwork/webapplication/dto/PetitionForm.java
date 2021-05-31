@@ -3,6 +3,6 @@ package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.dto;
 import lombok.Data;
 
 @Data
-public class PetitionFrom {
+public class PetitionForm {
     private String title;
 }

@@ -1,4 +1,4 @@
-package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service;
+package ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.service.interfaces;
 
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.details.UserDetailsImpl;
 import ru.kpfu.itis.group907.farkhutdinova.springsemwork.webapplication.domain.User;
