@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Login Page</title>
+    <title>Welcome Page</title>
 </head>
 <body style="background-color: #fce5a4; background-position: center center; background-repeat: no-repeat; background-size: cover;">
 <@c.page>

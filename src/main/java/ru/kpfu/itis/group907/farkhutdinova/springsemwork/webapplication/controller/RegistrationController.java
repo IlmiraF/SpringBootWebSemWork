@@ -30,10 +30,10 @@ public class RegistrationController {
     @PermitAll
     @PostMapping("/registration")
     public String signUp(@Valid UserForm form, HttpServletRequest request, BindingResult bindingResult, Model model) throws UnsupportedEncodingException, MessagingException {
-        if(bindingResult.hasErrors()) {
-            model.addAttribute("error", bindingResult);
-            return "registration";
-        }
+//        if(bindingResult.hasErrors()) {
+//            model.addAttribute("error", bindingResult);
+//            return "registration";
+//        }
         signUpService.signUp(form, getSiteURL(request));
         return "redirect:/login";
     }
